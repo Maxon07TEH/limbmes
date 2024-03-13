@@ -1,0 +1,89 @@
+[gd_scene load_steps=2 format=3 uid="uid://cdmk5qoc084os"]
+
+[ext_resource type="Script" path="res://btns.gd" id="1_at6ym"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+script = ExtResource("1_at6ym")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer"]
+offset_right = 1333.0
+offset_bottom = 648.0
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer/HBoxContainer"]
+clip_contents = true
+custom_minimum_size = Vector2(1327, 646)
+layout_direction = 1
+layout_mode = 2
+color = Color(0.211765, 0.211765, 0.211765, 1)
+
+[node name="back" type="HBoxContainer" parent="CanvasLayer"]
+offset_right = 116.0
+offset_bottom = 84.0
+
+[node name="Back" type="Button" parent="CanvasLayer/back"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 29
+text = "<назад"
+
+[node name="namebox" type="HBoxContainer" parent="CanvasLayer"]
+offset_left = 310.0
+offset_top = 3.0
+offset_right = 508.0
+offset_bottom = 78.0
+alignment = 1
+
+[node name="namedit" type="TextEdit" parent="CanvasLayer/namebox"]
+custom_minimum_size = Vector2(170, 75)
+layout_mode = 2
+text = "Gleb227HONOR"
+placeholder_text = "name"
+
+[node name="normbtn" type="HBoxContainer" parent="CanvasLayer"]
+offset_left = 1172.0
+offset_top = 3.0
+offset_right = 1325.0
+offset_bottom = 34.0
+alignment = 2
+
+[node name="normalswitch" type="CheckButton" parent="CanvasLayer/normbtn"]
+layout_mode = 2
+text = "normal mode
+"
+
+[node name="progbtn" type="HBoxContainer" parent="CanvasLayer"]
+offset_left = 1127.0
+offset_top = 37.0
+offset_right = 1325.0
+offset_bottom = 71.0
+alignment = 2
+
+[node name="programmistswitch" type="CheckButton" parent="CanvasLayer/progbtn"]
+layout_mode = 2
+text = "programmist mode
+"
+
+[node name="streambtn" type="HBoxContainer" parent="CanvasLayer"]
+offset_left = 1133.0
+offset_top = 67.0
+offset_right = 1325.0
+offset_bottom = 100.0
+alignment = 2
+
+[node name="streamswitch" type="CheckButton" parent="CanvasLayer/streambtn"]
+layout_mode = 2
+text = "stream mode"
+
+[node name="testbtn" type="HBoxContainer" parent="CanvasLayer"]
+offset_left = 1174.0
+offset_top = 99.0
+offset_right = 1325.0
+offset_bottom = 130.0
+alignment = 2
+
+[node name="Testswitch" type="CheckButton" parent="CanvasLayer/testbtn"]
+layout_mode = 2
+button_pressed = true
+text = "test mode
+"

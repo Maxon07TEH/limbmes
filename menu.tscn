@@ -1,0 +1,80 @@
+[gd_scene load_steps=3 format=3 uid="uid://btcw2x7nd3cwr"]
+
+[ext_resource type="Script" path="res://GoToScBTN.tres.gd" id="1_qmci3"]
+[ext_resource type="AudioStream" uid="uid://w67ok8s0bnyh" path="res://LIMBO-menu.MP3" id="2_kyqej"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+script = ExtResource("1_qmci3")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer"]
+offset_right = 1333.0
+offset_bottom = 648.0
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer/HBoxContainer"]
+clip_contents = true
+custom_minimum_size = Vector2(1327, 646)
+layout_direction = 1
+layout_mode = 2
+color = Color(0.211765, 0.211765, 0.211765, 1)
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="CanvasLayer"]
+position = Vector2(2, 0)
+stream = ExtResource("2_kyqej")
+autoplay = true
+
+[node name="playbtn" type="HBoxContainer" parent="CanvasLayer"]
+offset_left = 517.0
+offset_top = 44.0
+offset_right = 740.0
+offset_bottom = 163.0
+alignment = 1
+
+[node name="Button_play" type="Button" parent="CanvasLayer/playbtn"]
+custom_minimum_size = Vector2(200, 115)
+layout_mode = 2
+theme_override_font_sizes/font_size = 29
+text = "play"
+
+[node name="settbtn" type="HBoxContainer" parent="CanvasLayer"]
+offset_left = 529.0
+offset_top = 166.0
+offset_right = 737.0
+offset_bottom = 302.0
+
+[node name="Button_setting" type="Button" parent="CanvasLayer/settbtn"]
+custom_minimum_size = Vector2(200, 115)
+layout_mode = 2
+theme_override_font_sizes/font_size = 29
+text = "setting"
+
+[node name="text1" type="HBoxContainer" parent="CanvasLayer"]
+offset_left = 567.0
+offset_top = 3.0
+offset_right = 679.0
+offset_bottom = 41.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/text1"]
+custom_minimum_size = Vector2(112, 38)
+layout_mode = 2
+theme_override_font_sizes/normal_font_size = 26
+bbcode_enabled = true
+text = "limbmes"
+scroll_active = false
+autowrap_mode = 2
+
+[node name="text2" type="HBoxContainer" parent="CanvasLayer"]
+offset_left = 2.0
+offset_top = 595.0
+offset_right = 1148.0
+offset_bottom = 649.0
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="CanvasLayer/text2"]
+custom_minimum_size = Vector2(1330, 54)
+layout_mode = 2
+theme_override_font_sizes/normal_font_size = 31
+bbcode_enabled = true
+text = "By TheMES|inspired by limbos32&Undertale|made in Godot|ver0.25(alpha)|makar gay"
+scroll_active = false
+autowrap_mode = 2
